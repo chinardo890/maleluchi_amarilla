@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="animate.min.css">
 </head>
 <body background="fotos/tateti.png">
     
@@ -24,10 +25,12 @@
         <li><a href="contacto.html">Contacto</a></li>
     </nav>
 
-    <section class="border">
+    <div class="wow animate__bounceIn">
+    <section class="section">
         <h1>Inflables</h1>    
     </section>
-    <article class="border">
+    </div>
+    <article class="article">
     <h2>Inflable con tobogan</h2>
     <table border= "1"> 
         <tr>
@@ -61,5 +64,9 @@
         Realizado por Yoel Amarilla
     </footer>
 </div>
+<script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>

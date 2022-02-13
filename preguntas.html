@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="animate.min.css">
 </head>
 <body background="fotos/tateti.png">
     
@@ -25,11 +26,13 @@
         </ul>
     </nav>
 
-    <section class="border">
+    <div class="wow animate__bounceIn">
+    <section class="section">
         <h1>Preguntas</h1>
     </section>
+    </div>
 
-    <article class="border">
+    <article class="article">
     
     <h2>¿Con qué tiempo de anticipación hay que reservar, y de cuánto es la seña?</h2>
     <h4>Se necesita por lo menos 15 días de antelación, y NO cobramos seña porque consideramos que la palabra es lo más valioso del ser humano.</h4>
@@ -45,5 +48,9 @@
         Realizado por Yoel Amarilla
     </footer>
 </div>
+<script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>

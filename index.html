@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="animate.min.css">
 </head>
 <body background="fotos/tateti.png">
     
@@ -26,19 +26,27 @@
         </ul>
     </nav>
 
-    <section class="border">
-        <h1>Maleluchi</h1>
+
+    <div class="wow animate__bounceIn">
+    <section class="title">
+        <h1 class="section">Maleluchi</h1>
         <!--<img src="fotos/logo.jpg">-->
     </section>
-        
-    <article class="border">
+    </div>    
+    <article id="subtitle">
         <h1>Alquiler de juegos para fiestas y eventos</h1>
     </article>
+
     <footer class="border">
         Copyright © 2021 Maleluchi 
         <br> 
         Realizado por Yoel Amarilla
     </footer>
     </div>
+
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
