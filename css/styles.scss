@@ -1,0 +1,144 @@
+/*Variables*/
+$colorVerde:#52D156;
+$colorAzul:#26B0D4;
+
+$PaletaDeColores: (
+proximamente:#52D156,
+footer:#e6e6e6);
+
+/*Estilos generales*/
+body {
+    font-family: 'Comfortaa', cursive;
+  }
+  /*Media querie MOBILE*/
+  @media (max-width: 1024px) {
+  
+    @each $colores, $color in $PaletaDeColores {
+    .#{$colores}{
+        background-color:$color;
+    }
+}
+
+    .preguntas, .inflable-title {
+        font-weight: bold;
+        @extend .proximamente; 
+    }
+    
+    .header {
+      display: flex;
+      justify-content: flex-start;
+        p {
+            height: 30px;
+            text-align: center;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+        h1 {
+        text-align: center;
+        border-width: 2px;
+        border-top: solid 5px $colorAzul;
+        border-right: solid 5px $colorAzul;
+        border-bottom: solid 5px $colorVerde;
+        border-left: solid 5px $colorVerde;
+        padding: 40px;
+        width: auto;
+        margin: 20px;
+        overflow: hidden;
+        background-image: linear-gradient($colorAzul, $colorVerde);
+    }
+    }
+  
+    nav {
+        display: flex;
+        text-align: center;
+        overflow: hidden;
+        ul {
+        list-style-type: none;
+            li a {
+            display: flex;
+            color: white;
+            text-align: center;
+            margin: 0px;
+            padding: 30px;
+            text-decoration: none;
+                &:hover {
+                background-color: $colorVerde;
+      }
+    } 
+    }
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-evenly;
+      background-color: #e6e6e6;
+    }
+
+    @mixin bold {
+        font-weight: bold;
+    }
+    .footer{
+        @include bold;
+    }
+  }
+  /*Media querie DESKTOP*/
+  @media (min-width: 1024px) {
+        
+    .preguntas, .inflable-title {
+        font-weight: bold;
+    }
+
+    .header {
+      display: flex;
+      justify-content: flex-start;
+        h1 {
+        text-align: center;
+        border-width: 2px;
+        border-top: solid 5px $colorAzul;
+        border-right: solid 5px $colorAzul;
+        border-bottom: solid 5px $colorVerde;
+        border-left: solid 5px $colorVerde;
+        padding: 40px;
+        width: auto;
+        margin: 20px;
+        overflow: hidden;
+        background-image: linear-gradient($colorAzul, $colorVerde);
+    }
+    }
+  
+    nav {
+      display: flex;
+      text-align: center;
+      overflow: hidden;
+        ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+            li a {
+            display: flex;
+            color: white;
+            text-align: center;
+            margin: 0px;
+            padding: 30px;
+            text-decoration: none;
+                &:hover {
+                background-color: $colorVerde;
+      }
+    }
+    }
+    }
+  
+    .footer {
+      display: flex;
+      justify-content: space-evenly;
+      background-color: #e6e6e6;
+    }
+
+    @mixin bold {
+        font-weight: bold;
+    }
+    .footer{
+        @include bold;
+    }
+  }
