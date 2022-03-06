@@ -2,38 +2,20 @@
 $colorVerde:#52D156;
 $colorAzul:#26B0D4;
 
-$PaletaDeColores: (
-proximamente:#52D156,
-footer:#e6e6e6);
-
 /*Estilos generales*/
 body {
     font-family: 'Comfortaa', cursive;
   }
   /*Media querie MOBILE*/
   @media (max-width: 1024px) {
-  
-    @each $colores, $color in $PaletaDeColores {
-    .#{$colores}{
-        background-color:$color;
-    }
-}
 
     .preguntas, .inflable-title {
-        font-weight: bold;
-        @extend .proximamente; 
+        font-weight: bold; 
     }
-    
+
     .header {
       display: flex;
-      justify-content: flex-start;
-        p {
-            height: 30px;
-            text-align: center;
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-end;
-        }
+      justify-content: space-evenly;
         h1 {
         text-align: center;
         border-width: 2px;
@@ -69,6 +51,10 @@ body {
     }
     }
 
+    #logo{
+      display: flex;
+      justify-content: space-evenly;}
+      
     footer {
       display: flex;
       justify-content: space-evenly;
@@ -91,7 +77,7 @@ body {
 
     .header {
       display: flex;
-      justify-content: flex-start;
+      justify-content: space-evenly;
         h1 {
         text-align: center;
         border-width: 2px;
@@ -128,7 +114,11 @@ body {
     }
     }
     }
-  
+
+    #logo{
+      display: flex;
+      justify-content: space-evenly;}
+
     .footer {
       display: flex;
       justify-content: space-evenly;

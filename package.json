@@ -1,0 +1,25 @@
+{
+  "name": "maleluchi_amarilla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "wow.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-sass": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chinardo890/maleluchi_amarilla.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chinardo890/maleluchi_amarilla/issues"
+  },
+  "homepage": "https://github.com/chinardo890/maleluchi_amarilla#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
