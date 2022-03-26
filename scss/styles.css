@@ -45,6 +45,10 @@ body {
   nav ul li a:hover {
     background-color: #52D156;
   }
+  .article {
+    display: flex;
+    justify-content: flex-start;
+  }
   #logo {
     display: flex;
     justify-content: space-evenly;
@@ -101,6 +105,10 @@ body {
   }
   nav ul li a:hover {
     background-color: #52D156;
+  }
+  .article {
+    display: flex;
+    justify-content: flex-start;
   }
   #logo {
     display: flex;
